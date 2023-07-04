@@ -19,11 +19,11 @@ from plotly.subplots import make_subplots
 
 st.title('Stockscope 🔍')
 st.write('Welcome to your one stop point to improve you decision making regarding stocks to purchase !')
+ticker= st.text_input("Enter the ticker symbol: " )
 
 def main():
     # Prompt for the ticker symbol
     #ticker = input("Enter the ticker symbol: ")
-    ticker= st.text_input("Enter the ticker symbol: " )
 
     # Set the start and end dates
     end_date = datetime.now()
